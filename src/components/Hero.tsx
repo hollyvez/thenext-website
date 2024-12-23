@@ -1,5 +1,4 @@
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { JoinNeighborhoodModal } from "@/components/JoinNeighborhoodModal";
 
 export const Hero = () => {
   return (
@@ -13,11 +12,7 @@ export const Hero = () => {
           <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-fade-up">
             Connecting Communities, One Neighbor at a Time
           </p>
-          <Button 
-            className="bg-navy hover:bg-accent-blue text-cream text-lg px-8 py-6 rounded-full transition-all duration-300 animate-fade-up"
-          >
-            Join Your Neighborhood <ArrowRight className="ml-2" />
-          </Button>
+          <JoinNeighborhoodModal />
         </div>
       </div>
     </section>
