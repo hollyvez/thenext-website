@@ -122,6 +122,10 @@ export default {
             "background-position": "right center",
           },
         },
+        bounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-25%)" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
@@ -130,6 +134,7 @@ export default {
         "pulse-slow": "pulse-slow 4s ease-in-out infinite",
         "gradient-x": "gradient-x 15s ease infinite",
         "gradient-xy": "gradient-xy 15s ease infinite",
+        "bounce": "bounce 0.5s ease-in-out",
       },
     },
   },
