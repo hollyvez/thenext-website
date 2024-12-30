@@ -28,10 +28,7 @@ export const HowItWorks = () => {
                 <img 
                   src={step.icon} 
                   alt={`${step.title} icon`} 
-                  className={`w-24 h-24 hover:scale-110 transition-transform duration-300`}
-                  style={{
-                    animation: `spin 1s ease-in-out ${index * 0.2}s, bounce 0.5s ease-in-out ${0.8 + index * 0.2}s`
-                  }}
+                  className={`w-24 h-24 hover:scale-110 transition-transform duration-300 animate-[spin_1s_ease-in-out_${index * 0.2}s,bounce_0.5s_ease-in-out_${0.8 + index * 0.2}s]`}
                 />
               </div>
               <h3 className="text-2xl font-satisfy text-navy mb-4">{step.title}</h3>

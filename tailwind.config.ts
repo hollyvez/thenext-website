@@ -127,8 +127,8 @@ export default {
           "50%": { transform: "translateY(-25%)" },
         },
         spin: {
-          "from": { transform: "rotate(0deg)" },
-          "to": { transform: "rotate(360deg)" },
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
       animation: {
@@ -139,6 +139,7 @@ export default {
         "gradient-x": "gradient-x 15s ease infinite",
         "gradient-xy": "gradient-xy 15s ease infinite",
         "bounce": "bounce 0.5s ease-in-out",
+        "spin": "spin 1s ease-in-out",
       },
     },
   },
