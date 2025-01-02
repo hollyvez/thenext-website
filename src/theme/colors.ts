@@ -1,7 +1,7 @@
 export const colors = {
   navy: "#000080",
   cream: "#FFF8E7",
-  accent: {
+  custom: {
     blue: "#1C4494",
     green: "#008000",
     orange: "#FFA500",
