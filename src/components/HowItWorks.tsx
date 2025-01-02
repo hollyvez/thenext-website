@@ -20,7 +20,7 @@ export const HowItWorks = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-lato text-navy text-center mb-16">How It Works</h2>
+        <h2 className="text-4xl font-lato text-accent-blue text-center mb-16">How It Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {steps.map((step, index) => (
             <div key={index} className="text-center">
@@ -28,10 +28,14 @@ export const HowItWorks = () => {
                 <img 
                   src={step.icon} 
                   alt={`${step.title} icon`} 
-                  className={`w-24 h-24 hover:scale-110 transition-transform duration-300 animate-[spin_1s_ease-in-out_${index * 0.2}s,bounce_0.5s_ease-in-out_${0.8 + index * 0.2}s]`}
+                  className={`w-24 h-24 hover:scale-110 transition-transform duration-300 animate-spin-bounce`}
+                  style={{
+                    animationDelay: `${index * 0.2}s`,
+                    animationFillMode: 'forwards'
+                  }}
                 />
               </div>
-              <h3 className="text-2xl font-satisfy text-navy mb-4">{step.title}</h3>
+              <h3 className="text-2xl font-satisfy text-accent-blue mb-4">{step.title}</h3>
               <p className="text-gray-600">{step.description}</p>
             </div>
           ))}

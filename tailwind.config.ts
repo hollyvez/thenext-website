@@ -22,11 +22,11 @@ export default {
         navy: "#000080",
         cream: "#FFF8E7",
         accent: {
-          red: "#FF0000",
+          blue: "#1C4494",
+          green: "#008000",
           orange: "#FFA500",
           yellow: "#FFFF00",
-          green: "#008000",
-          blue: "#1C4494",
+          red: "#FF0000",
           purple: "#800080",
         },
         border: "hsl(var(--border))",
@@ -130,6 +130,12 @@ export default {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
         },
+        "spin-bounce": {
+          "0%": { transform: "rotate(0deg)" },
+          "70%": { transform: "rotate(360deg)" },
+          "85%": { transform: "translateY(-15px)" },
+          "100%": { transform: "translateY(0)" },
+        }
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
@@ -140,6 +146,7 @@ export default {
         "gradient-xy": "gradient-xy 15s ease infinite",
         "bounce": "bounce 0.5s ease-in-out",
         "spin": "spin 1s ease-in-out",
+        "spin-bounce": "spin-bounce 1.5s ease-in-out"
       },
     },
   },
