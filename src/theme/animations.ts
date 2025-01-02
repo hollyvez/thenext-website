@@ -53,20 +53,14 @@ export const keyframes = {
       "background-position": "right center",
     },
   },
-  bounce: {
-    "0%, 100%": { transform: "translateY(0)" },
-    "50%": { transform: "translateY(-25%)" },
-  },
-  spin: {
+  "bounce-spin": {
     "0%": { transform: "rotate(0deg)" },
-    "100%": { transform: "rotate(360deg)" },
-  },
-  "spin-bounce": {
-    "0%": { transform: "rotate(0deg)" },
-    "70%": { transform: "rotate(360deg)" },
-    "85%": { transform: "translateY(-15px)" },
+    "30%": { transform: "rotate(360deg)" },
+    "60%": { transform: "translateY(-25%)" },
+    "75%": { transform: "translateY(0)" },
+    "85%": { transform: "translateY(-15%)" },
     "100%": { transform: "translateY(0)" },
-  }
+  },
 };
 
 export const animations = {
@@ -76,7 +70,5 @@ export const animations = {
   "pulse-slow": "pulse-slow 4s ease-in-out infinite",
   "gradient-x": "gradient-x 15s ease infinite",
   "gradient-xy": "gradient-xy 15s ease infinite",
-  "bounce": "bounce 0.5s ease-in-out",
-  "spin": "spin 1s ease-in-out",
-  "spin-bounce": "spin-bounce 1.5s ease-in-out"
+  "bounce-spin": "bounce-spin 2s ease-in-out",
 };
